@@ -1,0 +1,30 @@
+# Descriptive Stats
+
+There are functions to find descriptive stats in base R such as follows using the mpg data set
+
+```{r}
+library(ggplot2)
+attach(mpg)
+
+max(cyl)
+min(cyl)
+mean(cyl)
+range(cyl)
+sum(cyl)
+prod(cyl)
+median(cyl)
+sd(cyl)
+head(cyl)
+summary(cyl)
+```
+
+Using the psych package provides summary statistics. 
+
+```{r}
+install.packages("psych")
+library(psych)
+describe(cyl)
+```
+
+
+
