@@ -1,0 +1,34 @@
+# Descriptive Stats
+
+## Base R Functions
+
+There are functions to find descriptive stats in base R such as follows using the mpg data set in ggplot2. The code below finds basic descriptive stats using the variable *cyl* which is the number of cylinders.
+
+```{r}
+library(ggplot2) #use the library ggplot2 which contains the mpg data set
+attach(mpg) #by attaching a data frame, we can now refer to the variables in the data frame by their names alone, rather than as components of the data frame (eg. mpg$cyl)
+
+max(cyl) #maximum 
+min(cyl) #minimum 
+mean(cyl) #average/mean
+range(cyl) #range = max-min
+sum(cyl) #sum or all added together
+prod(cyl) #product
+median(cyl) #median
+sd(cyl) #standard deviation
+head(cyl) #first few lines of data
+summary(cyl) #shows minimum, 1st quartile, median, mean, 3rd quartile, and maximum
+```
+
+## psych package, describe()
+
+Using the psych package can provide summary statistics using the **describe() function**
+
+```{r}
+#install.packages("psych")
+library(psych)
+attach(mpg)
+describe(cyl)
+
+describe(mpg) #shows descriptive stats on all the variables, but the categorical ones are in asterisks 
+```

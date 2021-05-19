@@ -1,0 +1,16 @@
+---
+title: "Capstone Project"
+author: "Tori Hagstrom"
+site: bookdown::bookdown_site
+documentclass: book
+output:
+  bookdown::gitbook: default
+  #bookdown::pdf_book: default
+---
+
+# Introduction
+
+
+This is a working document for R based resources for intro R scholars. 
+
+<!-- If you need PDF output, uncomment bookdown::pdf_book above in YAML. You will need a LaTeX installation, e.g., https://yihui.name/tinytex/ -->
